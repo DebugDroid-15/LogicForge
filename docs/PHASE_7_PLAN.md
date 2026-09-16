@@ -24,3 +24,4 @@ Phase 7 expands **LogicForge** into an extensible FPGA ecosystem platform with h
 ### 5. Documentation
 - Create `docs/PHASE_7.md`, `docs/HARDWARE_DEBUG.md`, `docs/FPGA_BACKEND_SDK.md`, `docs/BOARD_ECOSYSTEM.md`, `docs/IP_ECOSYSTEM.md`, `docs/REPRODUCIBLE_BUILDS.md`.
 - Update `README.md` and `CHANGELOG.md` to `v0.7.0-alpha`.
+

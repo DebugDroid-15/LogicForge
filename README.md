@@ -66,6 +66,9 @@
 
 ## Documentation
 
+- [Release v1.0.0 Notes](docs/RELEASE_v1.0.0.md)
+- [Capabilities Matrix](docs/CAPABILITIES.md)
+- [Phase 8 Audit](docs/PHASE_8_AUDIT.md)
 - [Phase 7 Overview](docs/PHASE_7.md)
 - [Phase 6 Overview](docs/PHASE_6.md)
 - [Phase 5 Overview](docs/PHASE_5.md)

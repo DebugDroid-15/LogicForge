@@ -25,3 +25,4 @@ export class DeviceSearchService {
     return this.db.find(d => d.part === part);
   }
 }
+

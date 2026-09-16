@@ -11,20 +11,20 @@ export * from './ipService.js';
 export * from './blockDesignService.js';
 export * from './projectPackager.js';
 export * from './formalService.js';
+export * from './pluginService.js';
+export * from './debugArchitecture.js';
+export * from './quickFixService.js';
+export * from './workspaceService.js';
+export * from './deviceSearchService.js';
+export * from './hardwareTestService.js';
+export * from './cdcService.js';
+export * from './debugService.js';
 export * from './designGraphService.js';
 export * from './fsmService.js';
-export * from './cdcService.js';
 export * from './resetService.js';
 export * from './resourceAnalysisService.js';
 export * from './resourceTrendingService.js';
-export * from './workspaceService.js';
-export * from './quickFixService.js';
-export * from './pluginService.js';
-export * from './debugArchitecture.js';
-export * from './debugService.js';
+export * from './testbenchService.js';
 export * from './backendRegistry.js';
-export * from './deviceSearchService.js';
-export * from './hardwareTestService.js';
-
 
 

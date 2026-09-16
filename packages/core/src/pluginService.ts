@@ -27,3 +27,4 @@ export class PluginService {
     this.registeredPlugins.push(manifest);
   }
 }
+

@@ -43,3 +43,4 @@ test('HardwareTestService reports hardware test execution status', () => {
   assert.strictEqual(report.status, 'HARDWARE_UNAVAILABLE');
   assert.ok(report.details.includes('not connected'));
 });
+

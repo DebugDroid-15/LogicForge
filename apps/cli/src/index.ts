@@ -12,9 +12,6 @@ import {
   FormalService,
   PluginService,
   DebugArchitectureService,
-  BackendRegistry,
-  DeviceSearchService,
-  HardwareTestService,
 } from '@logicforge/core';
 import { ToolDetector } from '@logicforge/toolchain';
 import { IcarusBackend, YosysBackend, NextpnrBackend, IcepackBackend, OpenFPGALoaderBackend } from '@logicforge/backends';
@@ -434,33 +431,15 @@ export async function runCLI(args: string[]): Promise<void> {
     return;
   }
 
-  if (command === 'backends') {
-    const caps = BackendRegistry.getCapabilities();
+  if (command === 'debug-info') {
+    const probe = DebugArchitectureService.detectProbe();
     if (isJson) {
-      console.log(JSON.stringify(caps, null, 2));
+      console.log(JSON.stringify(probe, null, 2));
     } else {
-      console.log('\n--- Supported FPGA Backend Capabilities ---');
-      for (const b of caps) {
-        console.log(`• ${b.vendor} ${b.family}: Synth=${b.synthesis}, PnR=${b.placeAndRoute}, Bitstream=${b.bitstream}, Prog=${b.programming}`);
-      }
-    }
-    return;
-  }
-
-  if (command === 'environment') {
-    const env = {
-      logicforgeVersion: '0.7.0-alpha',
-      platform: process.platform,
-      arch: process.arch,
-      nodeVersion: process.version,
-    };
-    if (isJson) {
-      console.log(JSON.stringify(env, null, 2));
-    } else {
-      console.log('\n--- LogicForge Environment Snapshot ---');
-      console.log(`LogicForge: ${env.logicforgeVersion}`);
-      console.log(`Node.js: ${env.nodeVersion}`);
-      console.log(`OS: ${env.platform} (${env.arch})`);
+      console.log('\n--- Hardware Debug Probe Capability ---');
+      console.log(`Available: ${probe.available}`);
+      console.log(`Probe: ${probe.probeName}`);
+      console.log(`Reason: ${probe.reasonIfUnavailable}`);
     }
     return;
   }

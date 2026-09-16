@@ -16,3 +16,4 @@ logicforge ci-report [--json]
 logicforge plugins [--json]
 logicforge debug-info [--json]
 ```
+

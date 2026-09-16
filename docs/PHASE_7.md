@@ -24,3 +24,4 @@ LogicForge Phase 7 transforms LogicForge into an extensible FPGA ecosystem platf
 logicforge backends [--json]
 logicforge environment [--json]
 ```
+

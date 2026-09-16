@@ -8,3 +8,4 @@ module hardware_test_top (
     end
 
 endmodule
+

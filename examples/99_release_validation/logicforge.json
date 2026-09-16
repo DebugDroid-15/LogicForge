@@ -1,15 +1,15 @@
 {
-  "name": "Hardware_Test_Example",
-  "version": "0.7.0-alpha",
+  "name": "Release_Validation_Project",
+  "version": "1.0.0",
   "target": {
     "vendor": "Lattice",
     "family": "iCE40",
     "device": "iCE40HX1K-TQ144",
     "package": "TQ144"
   },
-  "topModule": "hardware_test_top",
+  "topModule": "release_validation_top",
   "sources": [
-    "top.v"
+    "rtl/top.v"
   ],
   "constraints": [],
   "toolchain": {
@@ -17,4 +17,3 @@
     "pnr": "nextpnr-ice40"
   }
 }
-

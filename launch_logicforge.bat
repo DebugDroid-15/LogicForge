@@ -159,17 +159,26 @@ echo.
 echo LogicForge can start normally.
 echo.
 echo.
-echo Launching LogicForge Desktop IDE...
-echo [%DATE% %TIME%] Launching Desktop application... >> "%STARTUP_LOG%"
+echo Launching LogicForge Native Desktop IDE Application Window...
+echo [%DATE% %TIME%] Launching Native Desktop Window... >> "%STARTUP_LOG%"
 
 cd /d "%SCRIPT_DIR%"
 call npx tsc -b
 
-start http://localhost:3000
+:: Check for MS Edge executable path to run in Native App Mode (--app=http://localhost:3000)
+set "EDGE_PATH=%ProgramFiles(x86)%\Microsoft\Edge\Application\msedge.exe"
+if not exist "!EDGE_PATH!" set "EDGE_PATH=%ProgramFiles%\Microsoft\Edge\Application\msedge.exe"
+
+if exist "!EDGE_PATH!" (
+    start "" "!EDGE_PATH!" --app=http://localhost:3000 --name="LogicForge FPGA IDE" --user-data-dir="%SCRIPT_DIR%\logs\desktop-profile"
+) else (
+    start http://localhost:3000
+)
 
 call npm --workspace=apps/desktop run dev
 
 echo.
 echo [%DATE% %TIME%] LogicForge session closed cleanly. >> "%STARTUP_LOG%"
+
 
 

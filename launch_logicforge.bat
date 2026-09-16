@@ -158,12 +158,18 @@ if %ERRORLEVEL% equ 0 (
 echo.
 echo LogicForge can start normally.
 echo.
-echo Launching LogicForge Desktop...
+echo.
+echo Launching LogicForge Desktop IDE...
 echo [%DATE% %TIME%] Launching Desktop application... >> "%STARTUP_LOG%"
 
 cd /d "%SCRIPT_DIR%"
+call npx tsc -b
+
+start http://localhost:3000
+
 call npm --workspace=apps/desktop run dev
 
 echo.
 echo [%DATE% %TIME%] LogicForge session closed cleanly. >> "%STARTUP_LOG%"
+
 

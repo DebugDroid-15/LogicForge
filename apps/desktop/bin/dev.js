@@ -22,12 +22,22 @@ const server = http.createServer((req, res) => {
   let reqUrl = req.url || '/';
   if (reqUrl === '/') reqUrl = '/index.html';
 
-  let filePath = path.join(desktopRoot, reqUrl);
+  let filePath = path.normalize(path.join(desktopRoot, reqUrl));
 
-  // Fallback for index.html if request doesn't exist
+  // If path goes up to workspace root (e.g. /packages/...)
+  const workspaceRoot = path.resolve(desktopRoot, '../..');
   if (!fs.existsSync(filePath)) {
+    const candidateWorkspacePath = path.normalize(path.join(workspaceRoot, reqUrl));
+    if (fs.existsSync(candidateWorkspacePath) && fs.statSync(candidateWorkspacePath).isFile()) {
+      filePath = candidateWorkspacePath;
+    }
+  }
+
+  // Fallback for SPA routing if file still not found
+  if (!fs.existsSync(filePath) || fs.statSync(filePath).isDirectory()) {
     filePath = path.join(desktopRoot, 'index.html');
   }
+
 
   const ext = path.extname(filePath).toLowerCase();
   const contentType = MIME_TYPES[ext] || 'application/octet-stream';

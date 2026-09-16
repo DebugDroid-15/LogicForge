@@ -24,3 +24,4 @@ Frequently asked questions and troubleshooting steps for LogicForge.
 
 ### Q: Where are build logs stored?
 **A**: Launcher diagnostics are logged in `logs/startup.log`. Project build logs are output in real-time in the **BUILD CONSOLE** at the bottom of the LogicForge Desktop application.
+

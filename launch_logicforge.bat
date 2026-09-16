@@ -166,3 +166,4 @@ call npm --workspace=apps/desktop run dev
 
 echo.
 echo [%DATE% %TIME%] LogicForge session closed cleanly. >> "%STARTUP_LOG%"
+

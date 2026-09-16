@@ -46,3 +46,4 @@ node apps/cli/bin/logicforge.js doctor
 ```
 
 Or view the **Toolchain Status** card on the LogicForge Desktop **HOME** tab.
+

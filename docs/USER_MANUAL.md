@@ -123,3 +123,4 @@ LogicForge features progressive disclosure:
 ## 12. Toolchain Manager
 
 Inspect and configure local paths for external compilers and synthesis engines. Missing optional tools do not block IDE execution.
+

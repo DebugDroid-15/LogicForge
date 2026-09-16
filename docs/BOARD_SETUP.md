@@ -34,3 +34,4 @@ To allow `openFPGALoader` to access FTDI USB devices on Windows:
 3. Build your project bitstream (**SYNTHESIZE** -> **BUILD**).
 4. Navigate to the **HARDWARE** workspace tab.
 5. Click **Program Bitstream**.
+

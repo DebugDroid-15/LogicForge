@@ -2,7 +2,15 @@
 
 All notable changes to LogicForge will be documented in this file.
 
+## [1.0.0] - Production Release — 2026-09-16
+
+### Added
+- **Production Root Launcher (`launch_logicforge.bat`)**: Self-bootstrapping launcher for Windows. Automatically detects runtime dependencies (Node.js, npm), handles `winget` installation prompts, self-heals missing workspace packages, detects optional FPGA toolchains (`iverilog`, `yosys`, `nextpnr`, `openFPGALoader`), and writes diagnostic startup logs to `logs/startup.log`.
+- **Integrated Desktop Server Runner (`apps/desktop/bin/dev.js`)**: Standalone local server runner hosting the LogicForge Desktop application at `http://localhost:3000`.
+- **Comprehensive End-User Documentation Matrix**: Added `QUICKSTART.md`, `docs/USER_MANUAL.md`, `docs/TOOLCHAIN_SETUP.md`, `docs/BOARD_SETUP.md`, and `docs/TROUBLESHOOTING.md`.
+
 ## [0.7.0-alpha] - Phase 7 — 2026-09-16
+
 
 ### Added
 - **Advanced Hardware Debug & Probe Service (`DebugService`)**: Probe capability discovery matrix, debug session lifecycle manager, and logic analyzer sample capture model.

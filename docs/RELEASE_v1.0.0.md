@@ -22,3 +22,4 @@
 - **Synthesis & Pn R**: Yosys, `nextpnr-ice40`, `nextpnr-ecp5`.
 - **Flashing**: `openFPGALoader`.
 - **Target Boards**: Lattice iCEstick (iCE40HX1K-TQ144), ECP5-5G-EVN (LFE5UM5G-85F-8BG381C).
+

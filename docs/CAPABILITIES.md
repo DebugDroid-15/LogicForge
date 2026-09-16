@@ -12,3 +12,4 @@
 | Hardware Debug | Probe & Logic Analyzer Capture | `HARDWARE_DEPENDENT` | `DebugService`, explicit `HARDWARE_UNAVAILABLE` tag |
 | Formal Verification | SymbiYosys Assertion Checking | `TOOL_DEPENDENT` | Requires SymbiYosys / SMT-BMC solvers |
 | Gowin Backend | GW1N Architecture Entry | `EXPERIMENTAL` | Capability matrix registered, open toolchain flow pending |
+

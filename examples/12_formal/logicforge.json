@@ -1,0 +1,20 @@
+{
+  "name": "Formal_Example",
+  "version": "0.4.0",
+  "target": {
+    "vendor": "Lattice",
+    "family": "iCE40",
+    "device": "iCE40HX1K-TQ144",
+    "package": "TQ144"
+  },
+  "topModule": "formal_counter",
+  "sources": [
+    "formal_counter.v"
+  ],
+  "constraints": [],
+  "toolchain": {
+    "synthesis": "yosys",
+    "pnr": "nextpnr-ice40"
+  }
+}
+

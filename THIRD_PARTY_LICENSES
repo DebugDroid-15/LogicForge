@@ -1,0 +1,32 @@
+# LogicForge Third-Party Licenses Notice
+
+LogicForge is designed to interface with open-source FPGA toolchains and third-party software components.
+
+## Integrated & External Toolchains
+
+1. **Yosys Open SYnthesis Suite**
+   - License: ISC License
+   - Usage: Open-source RTL synthesis, netlist generation, and structural JSON export.
+
+2. **Icarus Verilog (iverilog & vvp)**
+   - License: GNU General Public License (GPL) v2+
+   - Usage: Verilog HDL compilation and simulation execution.
+
+3. **Verilator**
+   - License: LGPL v3 / Artistic License 2.0
+   - Usage: High-performance C++/SystemVerilog cycle-accurate simulation engine.
+
+4. **nextpnr**
+   - License: ISC License
+   - Usage: Portable FPGA Place and Route tool suite.
+
+5. **openFPGALoader**
+   - License: Apache License 2.0
+   - Usage: Universal utility for FPGA programming via JTAG/SPI/USB.
+
+## JavaScript / Node Libraries
+
+- **React**: MIT License
+- **TypeScript**: Apache License 2.0
+- **Lucide Icons**: ISC License
+

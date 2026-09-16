@@ -1,0 +1,28 @@
+{
+  "luts": {
+    "used": 0,
+    "available": 1280,
+    "percentage": 0
+  },
+  "flipFlops": {
+    "used": 0,
+    "available": 1280,
+    "percentage": 0
+  },
+  "bram": {
+    "used": 0,
+    "available": 16,
+    "percentage": 0
+  },
+  "dsp": {
+    "used": 0,
+    "available": 0,
+    "percentage": 0
+  },
+  "io": {
+    "used": 0,
+    "available": 96,
+    "percentage": 0
+  },
+  "primitives": {}
+}

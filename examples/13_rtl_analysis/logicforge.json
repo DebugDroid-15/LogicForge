@@ -1,0 +1,20 @@
+{
+  "name": "RTL_Analysis_Example",
+  "version": "0.5.0-alpha",
+  "target": {
+    "vendor": "Lattice",
+    "family": "iCE40",
+    "device": "iCE40HX1K-TQ144",
+    "package": "TQ144"
+  },
+  "topModule": "top",
+  "sources": [
+    "top.v"
+  ],
+  "constraints": [],
+  "toolchain": {
+    "synthesis": "yosys",
+    "pnr": "nextpnr-ice40"
+  }
+}
+

@@ -1,0 +1,22 @@
+{
+  "name": "@logicforge/cli",
+  "version": "0.1.0",
+  "bin": {
+    "logicforge": "./bin/logicforge.js"
+  },
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@logicforge/backends": "0.1.0",
+    "@logicforge/constraints": "0.1.0",
+    "@logicforge/core": "0.1.0",
+    "@logicforge/editor": "0.1.0",
+    "@logicforge/schematic": "0.1.0",
+    "@logicforge/toolchain": "0.1.0",
+    "@logicforge/waveform": "0.1.0"
+  }
+}
+

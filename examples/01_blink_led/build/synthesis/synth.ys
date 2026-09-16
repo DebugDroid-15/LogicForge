@@ -1,0 +1,6 @@
+read_verilog -sv rtl/top.v
+hierarchy -top top
+proc; opt; fsm; opt; memory; opt
+write_json C:/PROJECTS/LogicForge/examples/01_blink_led/build/synthesis/netlist.json
+synth_ice40 -top top
+write_verilog C:/PROJECTS/LogicForge/examples/01_blink_led/build/synthesis/synth.v

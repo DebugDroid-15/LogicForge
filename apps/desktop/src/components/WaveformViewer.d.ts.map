@@ -1,0 +1,1 @@
+{"version":3,"file":"WaveformViewer.d.ts","sourceRoot":"","sources":["WaveformViewer.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAsC,MAAM,OAAO,CAAC;AAC3D,OAAO,EAAE,aAAa,EAAa,MAAM,sBAAsB,CAAC;AAEhE,UAAU,mBAAmB;IAC3B,OAAO,CAAC,EAAE,aAAa,CAAC;IACxB,UAAU,CAAC,EAAE,MAAM,CAAC;CACrB;AAED,eAAO,MAAM,cAAc,EAAE,KAAK,CAAC,EAAE,CAAC,mBAAmB,CAwIxD,CAAC"}

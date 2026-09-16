@@ -1,0 +1,50 @@
+{
+  "modules": {
+    "top": {
+      "ports": {
+        "clk": {
+          "direction": "input",
+          "bits": [
+            2
+          ]
+        },
+        "led": {
+          "direction": "output",
+          "bits": [
+            3
+          ]
+        }
+      },
+      "cells": {
+        "adder_0": {
+          "type": "$add",
+          "connections": {
+            "A": [
+              2
+            ],
+            "B": [
+              2
+            ],
+            "Y": [
+              4
+            ]
+          }
+        },
+        "reg_counter": {
+          "type": "$dff",
+          "connections": {
+            "CLK": [
+              2
+            ],
+            "D": [
+              4
+            ],
+            "Q": [
+              3
+            ]
+          }
+        }
+      }
+    }
+  }
+}

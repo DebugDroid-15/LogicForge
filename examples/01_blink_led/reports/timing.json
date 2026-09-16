@@ -1,0 +1,38 @@
+{
+  "clockName": "clk",
+  "requiredNs": 10,
+  "actualNs": 9.43,
+  "slackNs": 0.57,
+  "worstPaths": [
+    {
+      "source": "reg_counter_0",
+      "destination": "reg_counter_23",
+      "slackNs": 0.57,
+      "requiredNs": 10,
+      "actualNs": 9.43,
+      "logicDepth": 4,
+      "elements": [
+        {
+          "type": "FF",
+          "name": "reg_counter_0",
+          "delayNs": 0.8
+        },
+        {
+          "type": "LUT",
+          "name": "adder_carry_0",
+          "delayNs": 1.2
+        },
+        {
+          "type": "LUT",
+          "name": "adder_carry_1",
+          "delayNs": 1.1
+        },
+        {
+          "type": "FF",
+          "name": "reg_counter_23",
+          "delayNs": 0.9
+        }
+      ]
+    }
+  ]
+}

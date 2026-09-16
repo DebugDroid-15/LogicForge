@@ -1,0 +1,23 @@
+{
+  "name": "09_timing_demo",
+  "version": "0.1.0",
+  "topModule": "top",
+  "language": "Verilog",
+  "sources": ["rtl/top.v"],
+  "simulationSources": ["sim/tb_top.v"],
+  "constraints": ["constraints/pins.xdc"],
+  "target": {
+    "vendor": "Lattice",
+    "family": "iCE40",
+    "part": "iCE40HX1K-TQ144",
+    "package": "TQ144"
+  },
+  "board": "iCEstick",
+  "toolchain": {
+    "synthesis": "yosys",
+    "simulation": "icarus",
+    "placeAndRoute": "nextpnr",
+    "programmer": "openfpgaloader"
+  }
+}
+

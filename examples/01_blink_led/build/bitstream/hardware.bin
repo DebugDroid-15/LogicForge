@@ -1,0 +1,5 @@
+LF_BITSTREAM_v1_iCE40HX1K-TQ144
+# LogicForge Simulated Place & Route ASC
+.device iCE40HX1K-TQ144
+.io_tile 0 1
+.logic_tile 1 1

@@ -1,0 +1,23 @@
+{
+  "id": "icestick",
+  "name": "Lattice iCEstick Evaluation Kit",
+  "manufacturer": "Lattice Semiconductor",
+  "fpga": {
+    "vendor": "Lattice",
+    "family": "iCE40",
+    "part": "iCE40HX1K-TQ144",
+    "package": "TQ144",
+    "lutCount": 1280,
+    "ffCount": 1280,
+    "bramCount": 16,
+    "dspCount": 0
+  },
+  "clockMHz": 12,
+  "clockPin": "21",
+  "pins": {
+    "clk": { "pin": "21", "ioStandard": "LVCMOS33", "description": "12MHz Onboard Crystal" },
+    "led": { "pin": "99", "ioStandard": "LVCMOS33", "description": "Red LED 0" }
+  },
+  "programmer": "openfpgaloader"
+}
+

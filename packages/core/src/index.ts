@@ -21,5 +21,10 @@ export * from './workspaceService.js';
 export * from './quickFixService.js';
 export * from './pluginService.js';
 export * from './debugArchitecture.js';
+export * from './debugService.js';
+export * from './backendRegistry.js';
+export * from './deviceSearchService.js';
+export * from './hardwareTestService.js';
+
 
 

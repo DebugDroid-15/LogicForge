@@ -2,6 +2,16 @@
 
 All notable changes to LogicForge will be documented in this file.
 
+## [0.7.0-alpha] - Phase 7 — 2026-09-16
+
+### Added
+- **Advanced Hardware Debug & Probe Service (`DebugService`)**: Probe capability discovery matrix, debug session lifecycle manager, and logic analyzer sample capture model.
+- **FPGA Backend Capability Matrix (`BackendRegistry`)**: Machine-readable capabilities for Lattice iCE40, ECP5, and Gowin GW1N backends.
+- **Device Search & Validation Engine (`DeviceSearchService`)**: Part specifications lookup tool for LUT/FF/BRAM counts and packaging.
+- **Automated Hardware Test Runner (`HardwareTestService`)**: Execution model for hardware targets with `HARDWARE_UNAVAILABLE` status classification.
+- **Headless CLI Commands**: Added `logicforge backends` and `logicforge environment`.
+- **Phase 7 Documentation & Example**: Created `examples/26_hardware_test`, `docs/PHASE_7.md`, and `docs/PHASE_7_PLAN.md`.
+
 ## [0.6.0-alpha] - Phase 6 — 2026-09-16
 
 ### Added

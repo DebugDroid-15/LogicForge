@@ -66,6 +66,7 @@
 
 ## Documentation
 
+- [Phase 7 Overview](docs/PHASE_7.md)
 - [Phase 6 Overview](docs/PHASE_6.md)
 - [Phase 5 Overview](docs/PHASE_5.md)
 - [Phase 4 Overview](docs/PHASE_4.md)

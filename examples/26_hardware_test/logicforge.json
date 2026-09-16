@@ -1,0 +1,19 @@
+{
+  "name": "Hardware_Test_Example",
+  "version": "0.7.0-alpha",
+  "target": {
+    "vendor": "Lattice",
+    "family": "iCE40",
+    "device": "iCE40HX1K-TQ144",
+    "package": "TQ144"
+  },
+  "topModule": "hardware_test_top",
+  "sources": [
+    "top.v"
+  ],
+  "constraints": [],
+  "toolchain": {
+    "synthesis": "yosys",
+    "pnr": "nextpnr-ice40"
+  }
+}

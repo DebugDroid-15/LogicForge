@@ -17,5 +17,9 @@ export * from './cdcService.js';
 export * from './resetService.js';
 export * from './resourceAnalysisService.js';
 export * from './resourceTrendingService.js';
-export * from './testbenchService.js';
+export * from './workspaceService.js';
+export * from './quickFixService.js';
+export * from './pluginService.js';
+export * from './debugArchitecture.js';
+
 

@@ -2,6 +2,16 @@
 
 All notable changes to LogicForge will be documented in this file.
 
+## [0.6.0-alpha] - Phase 6 — 2026-09-16
+
+### Added
+- **Integrated Workspace Layout (`WorkspaceService`)**: Dockable panel, open file, and layout state persistence manager.
+- **Diagnostic Quick Fix Framework (`QuickFixService`)**: Automated code fix suggestions for latches and vector width mismatches.
+- **Formal Plugin SDK (`PluginService`)**: Extensible backend, board, simulator, and debugger plugin manifest registry.
+- **Hardware Debug Probe Architecture (`DebugArchitectureService`)**: Probe capability detection interface.
+- **Headless CLI Commands**: Added `logicforge ci-report`, `logicforge plugins`, and `logicforge debug-info`.
+- **Phase 6 Documentation**: Created `docs/PHASE_6.md`.
+
 ## [0.5.0-alpha] - Phase 5 — 2026-09-16
 
 ### Added

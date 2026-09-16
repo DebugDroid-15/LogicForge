@@ -66,6 +66,8 @@
 
 ## Documentation
 
+- [Phase 6 Overview](docs/PHASE_6.md)
+- [Phase 5 Overview](docs/PHASE_5.md)
 - [Phase 4 Overview](docs/PHASE_4.md)
 - [HDL Linting Guide](docs/LINTING.md)
 - [IP Cores Guide](docs/IP.md)
